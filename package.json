@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "my-module-playground",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "nuxi start",
+    "generate": "node --max-old-space-size=12192 node_modules/nuxt/bin/nuxt.js generate"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.0.6",
+    "@nuxtjs/i18n": "8.0.0-rc.11",
+    "nuxt": "3.8.2"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "axios": "^1.6.2",
+    "chokidar": "^3.5.3",
+    "pinia": "^2.1.7"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}
