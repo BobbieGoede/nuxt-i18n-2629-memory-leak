@@ -8,6 +8,6 @@ await fooStore.loadData();
 
 <template>
 	<div>
-		<TranslationComponent />
+		<TranslationComponent :product-name="fooStore.chairData?.name ?? ''" />
 	</div>
 </template>

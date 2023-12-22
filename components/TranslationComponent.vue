@@ -1,7 +1,8 @@
 <script setup lang="ts">
+const props = defineProps({ productName: String });
+const { t } = useI18n();
 const text = computed(() => {
-	const i18n = useNuxtApp().$i18n;
-	return i18n.t("seventeen");
+	return t(props.productName);
 });
 </script>
 
